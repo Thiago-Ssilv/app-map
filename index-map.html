@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Photorealistic 3D Maps in Maps JavaScript</title>
+
+    <style>
+      html,
+      body {
+        height:100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="form">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <gmp-map-3d center="-22.867704,-43.070128" range="2000" tilt="75" heading="330"></gmp-map-3d>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR2IAeuincdzR2a6TgQro1hm93XmA-PS0&v=alpha&libraries=maps3d"> </script>
+   <script>
+       const form = document.getElementById('form');
+       form.addEventListener('submit', event =>{
+        event.preventDefault();
+        const firstName = document.getElementById('fname');
+        const lasttName = document.getElementById('lname');
+        })
+    console.log(form)
+   </script>
+  </body>
+</html>
